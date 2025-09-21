@@ -1,0 +1,163 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" href="https://public-frontend-cos.metadl.com/mgx/img/favicon.png"
+        type="image/png">
+    <title>YouTube Ad Blocker Extension</title>
+    <link rel="stylesheet" href="./style.css">
+</head>
+
+<body>
+    <div class="container">
+        <header class="hero">
+            <div class="hero-content">
+                <div class="logo">
+                    <svg width="48" height="48" viewBox="0 0 48 48" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <rect width="48" height="48" rx="8" fill="#FF4757"/>
+                        <path d="M12 18H36V30H12V18Z" fill="white"/>
+                        <path d="M18 24H30V27H18V24Z" fill="#FF4757"/>
+                    </svg>
+                </div>
+                <h1>YouTube Ad Blocker</h1>
+                <p>Firefox Extension - Block YouTube ads automatically and track blocked ads count</p>
+            </div>
+        </header>
+
+        <main>
+            <section class="features">
+                <h2>Key Features</h2>
+                <div class="feature-grid">
+                    <div class="feature-card">
+                        <div class="feature-icon">🚫</div>
+                        <h3>Auto Ad Blocking</h3>
+                        <p>Automatically blocks all types of YouTube ads including video, banner, and overlay ads</p>
+                    </div>
+                    <div class="feature-card">
+                        <div class="feature-icon">📊</div>
+                        <h3>Ad Counter</h3>
+                        <p>Tracks and displays the total number of blocked ads in a beautiful popup interface</p>
+                    </div>
+                    <div class="feature-card">
+                        <div class="feature-icon">⚡</div>
+                        <h3>Real-time Protection</h3>
+                        <p>Works instantly when you visit YouTube with no configuration required</p>
+                    </div>
+                    <div class="feature-card">
+                        <div class="feature-icon">🔒</div>
+                        <h3>Privacy Focused</h3>
+                        <p>No data collection, no external servers, completely private and secure</p>
+                    </div>
+                </div>
+            </section>
+
+            <section class="installation">
+                <h2>Installation Guide</h2>
+                <div class="install-steps">
+                    <div class="step">
+                        <div class="step-number">1</div>
+                        <div class="step-content">
+                            <h3>Download Extension</h3>
+                            <p>Download all extension files to your computer</p>
+                        </div>
+                    </div>
+                    <div class="step">
+                        <div class="step-number">2</div>
+                        <div class="step-content">
+                            <h3>Open Firefox Developer Mode</h3>
+                            <p>Navigate to <code>about:debugging</code> in Firefox</p>
+                        </div>
+                    </div>
+                    <div class="step">
+                        <div class="step-number">3</div>
+                        <div class="step-content">
+                            <h3>Load Extension</h3>
+                            <p>Click "This Firefox" → "Load Temporary Add-on" → Select manifest.json</p>
+                        </div>
+                    </div>
+                    <div class="step">
+                        <div class="step-number">4</div>
+                        <div class="step-content">
+                            <h3>Visit YouTube</h3>
+                            <p>Go to YouTube and enjoy ad-free browsing with blocked ads counter!</p>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <section class="how-it-works">
+                <h2>How It Works</h2>
+                <div class="work-flow">
+                    <div class="flow-item">
+                        <div class="flow-icon">🎯</div>
+                        <h3>Detection</h3>
+                        <p>Automatically detects YouTube ad elements using advanced CSS selectors</p>
+                    </div>
+                    <div class="arrow">→</div>
+                    <div class="flow-item">
+                        <div class="flow-icon">🛡️</div>
+                        <h3>Blocking</h3>
+                        <p>Removes ad elements and auto-skips video ads before they can display</p>
+                    </div>
+                    <div class="arrow">→</div>
+                    <div class="flow-item">
+                        <div class="flow-icon">📈</div>
+                        <h3>Counting</h3>
+                        <p>Tracks blocked ads and displays the count in the extension popup</p>
+                    </div>
+                </div>
+            </section>
+
+            <section class="tech-specs">
+                <h2>Technical Specifications</h2>
+                <div class="specs-grid">
+                    <div class="spec-item">
+                        <h4>Browser Support</h4>
+                        <p>Firefox (Manifest V2)</p>
+                    </div>
+                    <div class="spec-item">
+                        <h4>Permissions</h4>
+                        <p>Storage, ActiveTab, YouTube domains</p>
+                    </div>
+                    <div class="spec-item">
+                        <h4>File Size</h4>
+                        <p>< 50KB total extension size</p>
+                    </div>
+                    <div class="spec-item">
+                        <h4>Performance</h4>
+                        <p>Minimal CPU usage, efficient blocking</p>
+                    </div>
+                </div>
+            </section>
+
+            <section class="download">
+                <h2>Ready to Block Ads?</h2>
+                <p>Download the complete Firefox extension package and start enjoying ad-free YouTube experience!</p>
+                <div class="download-info">
+                    <div class="file-list">
+                        <h4>Extension Files:</h4>
+                        <ul>
+                            <li>📄 manifest.json - Extension configuration</li>
+                            <li>🔧 background.js - Background script</li>
+                            <li>📝 content.js - Content script for ad blocking</li>
+                            <li>🎨 popup.html/css/js - Extension popup interface</li>
+                            <li>🖼️ icons/ - Extension icons</li>
+                            <li>📚 README.md - Detailed instructions</li>
+                        </ul>
+                    </div>
+                </div>
+            </section>
+        </main>
+
+        <footer>
+            <p>YouTube Ad Blocker Extension v1.0.0 - For Educational Purposes</p>
+            <p>Please support content creators you enjoy through legitimate means</p>
+        </footer>
+    </div>
+
+    <script src="./script.js"></script>
+</body>
+
+</html>
