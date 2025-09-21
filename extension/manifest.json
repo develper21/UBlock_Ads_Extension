@@ -1,0 +1,72 @@
+{
+  "manifest_version": 2,
+  "name": "YouTube Ad Blocker Pro",
+  "version": "2.0.0",
+  "description": "Advanced YouTube ad blocker with SponsorBlock integration and hybrid detection",
+  
+  "permissions": [
+    "storage",
+    "activeTab",
+    "webRequest",
+    "webRequestBlocking",
+    "*://www.youtube.com/*",
+    "*://youtube.com/*",
+    "*://sponsor.ajay.app/*",
+    "*://sb-mirror.org/*"
+  ],
+  
+  "background": {
+    "scripts": ["background.js"],
+    "persistent": true
+  },
+  
+  "content_scripts": [
+    {
+      "matches": ["*://www.youtube.com/*", "*://youtube.com/*"],
+      "js": ["utils.js", "sponsorblock.js", "adblock.js", "content.js"],
+      "css": ["content.css"],
+      "run_at": "document_start"
+    }
+  ],
+  
+  "browser_action": {
+    "default_popup": "popup.html",
+    "default_title": "YouTube Ad Blocker Pro",
+    "default_icon": {
+      "16": "public/icons/youtube.png",
+      "48": "icons/icon48.png",
+      "128": "icons/icon128.png"
+    }
+  },
+  
+  "icons": {
+    "16": "icons/icon16.png",
+    "48": "icons/icon48.png",
+    "128": "icons/icon128.png"
+  },
+  
+  "options_ui": {
+    "page": "options.html",
+    "open_in_tab": true
+  },
+  
+  "web_accessible_resources": [
+    "inject.js",
+    "filters/*"
+  ],
+  
+  "commands": {
+    "toggle-blocking": {
+      "suggested_key": {
+        "default": "Ctrl+Shift+B"
+      },
+      "description": "Toggle ad blocking on current site"
+    },
+    "skip-segment": {
+      "suggested_key": {
+        "default": "Ctrl+Shift+S"
+      },
+      "description": "Skip current sponsor segment"
+    }
+  }
+}
