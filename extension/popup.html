@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>YouTube Ad Blocker</title>
+    <link rel="stylesheet" href="popup.css">
+</head>
+<body>
+    <div class="container">
+        <div class="header">
+            <div class="logo">
+                <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <path d="M12 2C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10S17.52 2 12 2zm-2 15l-5-5 1.41-1.41L10 14.17l7.59-7.59L19 8l-9 9z" fill="#ff0000"/>
+                </svg>
+            </div>
+            <h1>YouTube Ad Blocker</h1>
+        </div>
+        
+        <div class="stats">
+            <div class="stat-item">
+                <div class="stat-number" id="blockedCount">0</div>
+                <div class="stat-label">Ads Blocked</div>
+            </div>
+        </div>
+        
+        <div class="status" id="status">
+            <div class="status-indicator active"></div>
+            <span>Protection Active</span>
+        </div>
+        
+        <div class="actions">
+            <button id="resetBtn" class="reset-btn">Reset Counter</button>
+        </div>
+        
+        <div class="info">
+            <p>This extension blocks YouTube ads automatically and counts blocked ads.</p>
+            <div class="version">v1.0.0</div>
+        </div>
+    </div>
+    
+    <script src="popup.js"></script>
+</body>
+</html>
